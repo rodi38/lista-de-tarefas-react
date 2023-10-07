@@ -31,7 +31,7 @@ export default class Index extends Component {
     let { novaTarefa } = this.state;
     novaTarefa = novaTarefa.trim();
 
-    if (tarefas.indexOf(novaTarefa) !== -1 || novaTarefa.length <= 3 || novaTarefa.length >= 40 || /[^a-zA-Z0-9 ]/g.test(novaTarefa)) {
+    if (tarefas.indexOf(novaTarefa) !== -1 || novaTarefa.length <= 3 || novaTarefa.length >= 40 || /[^a-zA-Z0-9À-ú ]/g.test(novaTarefa)) {
       return;
     }
 
